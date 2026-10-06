@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #0B1628;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*/ a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+}
+
+a:hover {
+    color: #535bf2;
+}
+
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+}
+
+.no-select {
+    -webk-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.chat-bg {
+
+    background:
+        linear-gradient(120deg,
+            rgba(4, 10, 25, 0.98) 0%,
+            rgba(8, 13, 35, 0.96) 35%,
+            rgba(20, 10, 45, 0.94) 65%,
+            rgba(4, 7, 18, 0.99) 100%),
+        radial-gradient(ellipse at 20% 30%,
+            rgba(30, 80, 220, 0.22),
+            transparent 45%),
+        radial-gradient(ellipse at 80% 70%,
+            rgba(120, 40, 220, 0.20),
+            transparent 45%);
+
+    background-blend-mode: screen, normal, normal;
+}
+
+button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #2c2b2ab0;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+button:hover {
+    border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #213547;
+        background-color: #ffffff;
+    }
+
+    a:hover {
+        color: #747bff;
+    }
+
+    button {
+        background-color: #f9f9f9;
+    }
+}
