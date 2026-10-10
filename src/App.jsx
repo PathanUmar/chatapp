@@ -475,7 +475,7 @@ function App() {
               type="submit"
               className="mt-4 sm:mt-0 sm:ml-8 text-white max-h-12"
             >
-              Sends
+              Send
             </button>
             <span ref={scroll}></span>
           </form>
